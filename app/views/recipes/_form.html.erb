@@ -4,8 +4,6 @@
     Name: <%= ingr.text_field :name %>
     Quantity: <%= ingr.text_field :quantity %>
   <% end %>  
-  
+  <%= link_to 'add ingredient', @recipe %>
   <%= f.submit %>
 <% end %>
- 
- 
