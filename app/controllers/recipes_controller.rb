@@ -20,15 +20,7 @@ class RecipesController < ApplicationController
   
   def recipe_params
     params.require(:recipe).permit(:title, :ingredients_attributes)
+  end
+  
 end
 
-
-  def index
-    @people = Person.all
-  end
- 
-  private
- 
-  def person_params
-    params.require(:person).permit(:name)
-  end
